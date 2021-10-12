@@ -1,6 +1,7 @@
 #include "Zombie.hpp"
 
 Zombie::Zombie() {
+	this->_name = "Undefined_name";
 }
 
 Zombie::~Zombie() {
@@ -11,10 +12,6 @@ void Zombie::announce() {
 	std::cout << _name << " " << "BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void Zombie::setNameHorde(const std::string &nameHorde) {
-	_nameHorde = nameHorde;
-}
-
-void Zombie::setName(std::string &name) {
-	_name = name;
+void Zombie::set_name(std::string str) {
+	_name = str;
 }

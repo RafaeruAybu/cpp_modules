@@ -5,21 +5,13 @@
 #include <iostream>
 
 class Zombie {
-
 public:
 	Zombie();
 	~Zombie();
-
-	void setNameHorde(const std::string &nameHorde);
-
 	void announce();
-	void setName(std::string &name);
-
+	void set_name(std::string str);
 private:
 	std::string _name;
-	std::string _nameHorde;
 };
-
-Zombie* zombieHorde( int N, std::string name );
 
 #endif
