@@ -1,6 +1,6 @@
-NAME = a.out
-SRC = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
-CC = clang++
+NAME = replace
+SRC = main.cpp
+CC = clang++ -g
 CFLAGS = -Wall -Wextra -Werror
 OBJ = $(SRC:.cpp=.o)
 
