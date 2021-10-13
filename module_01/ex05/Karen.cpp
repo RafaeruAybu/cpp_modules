@@ -1,7 +1,7 @@
 #include "Karen.hpp"
 
 void Karen::complain(std::string level) {
-
+	fncptr fnarr[3] = { &};
 }
 
 void Karen::debug() {

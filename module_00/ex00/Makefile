@@ -1,5 +1,5 @@
-NAME = replace
-SRC = main.cpp
+NAME = megaphone
+SRC = megaphone.cpp
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror
 OBJ = $(SRC:.cpp=.o)

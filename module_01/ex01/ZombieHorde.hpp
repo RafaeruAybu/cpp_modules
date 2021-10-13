@@ -1,5 +1,5 @@
-#ifndef MODULE_01_EX00_ZOMBIEHORDE_HPP
-#define MODULE_01_EX00_ZOMBIEHORDE_HPP
+#ifndef MODULE_01_EX01_ZOMBIEHORDE_HPP
+#define MODULE_01_EX01_ZOMBIEHORDE_HPP
 
 #include <string>
 #include <iostream>

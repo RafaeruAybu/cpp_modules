@@ -1,5 +1,5 @@
-NAME = replace
-SRC = main.cpp
+NAME = phonebook
+SRC = main.cpp 
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror
 OBJ = $(SRC:.cpp=.o)
