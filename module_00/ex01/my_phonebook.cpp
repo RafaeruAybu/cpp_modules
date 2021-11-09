@@ -26,26 +26,52 @@ void Phonebook::add()
 		count++;
 }
 
-//todo вроде доделал перепроверить
 void Phonebook::search() {
-	int i;
+	int num;
 
 	print_all_persons();
-	while (1) {
-		std::cout << "Pls select index: ";
-		std::cout >> i;
-		if ((i < 0 || i > 8))
-			std::cout << "Wrong index! Index must be [0,8]." << std::endl;
-		if (person_array[i].is_defined() != 1)
-			std::cout << "Person under this index is not defined!" << std::endl;
-		person_array[i].print_full_info();
-	}
+	if (!person_array[0].is_defined())
+		return ;
+	std::cout << "Pleas select index: ";
+	std::cin >> num;
+	if ((num < 1 || num > 9))
+		std::cout << "Wrong index! Index must be [0,8]." << std::endl;
+	else if (person_array[num - 1].is_defined() != 1)
+		std::cout << "Person under this index is not defined!" << std::endl;
+	else
+		person_array[num - 1].print_full_info();
+}
+
+std::string truncate(std::string str)
+{
+	std::string ret_str;
+	int i = 0;
+	int j = 0;
+
+	ret_str.insert(0, 10, ' ');				//ten spaces wide str
+	while (i < (10 - (int)str.length()))	//skip spaces
+		i++;
+	while (i < 10)							//copy chars
+		ret_str[i++] = str[j++];
+	if ((int)str.length() > 10)				//if > 10 place a dot at the end
+		ret_str[9] = '.';
+	return (ret_str);						//ret
 }
 
 void Phonebook::print_all_persons() {
+	std::cout << "---------------------------------------------" << std::endl;
+	std::cout << "|     index|first name| last name|  nickname|" << std::endl;
+	std::cout << "---------------------------------------------" << std::endl;
 	for (int i = 0; i < 8; i++)
 	{
 		if (person_array[i].is_defined())
-			person_array[i].print_info();
+		{
+			std::cout	<< "|" << "         " << i + 1 << "|" 
+						<< truncate(person_array[i].get_first_name()) << "|"
+						<< truncate(person_array[i].get_last_name()) << "|"
+						<< truncate(person_array[i].get_nickname()) << "|"
+						<< std::endl;
+		}
 	}
+	std::cout << "---------------------------------------------" << std::endl;
 }

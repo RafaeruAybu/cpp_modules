@@ -13,7 +13,11 @@ public:
 	void set_nickname(std::string nickname);
 	void set_phone_number(std::string phone_number);
 	void set_darkest_secret(std::string darkest_secret);
-	void print_info();
+	std::string get_first_name();
+	std::string get_last_name();
+	std::string get_nickname();
+	std::string get_phone_number();
+	std::string get_darkest_secret();
 	void print_full_info();
 	int is_defined();
 	void define_the_def_flag();

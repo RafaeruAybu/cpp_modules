@@ -4,6 +4,7 @@ int main()
 {
 	std::string str;
 	Phonebook phonebook;
+	
 	while (1)
 	{
 		std::cout << "Write an command:" << std::endl;

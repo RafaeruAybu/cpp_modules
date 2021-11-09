@@ -15,6 +15,8 @@ Person::Person()
 
 Person::~Person() {}
 
+//setters
+
 void Person::set_first_name(std::string first_name)
 {
 	this->first_name = first_name;
@@ -45,22 +47,42 @@ void Person::set_darkest_secret(std::string darkest_secret)
 	flag_defined = 1;
 }
 
-//todo short_info
-void Person::print_info()
+//getters
+
+std::string Person::get_first_name()
 {
-	std::cout << "index				:" << index << std::endl;
-	std::cout << "first name			:" << first_name << std::endl;
-	std::cout << "last name			:" << last_name << std::endl;
-	std::cout << "nickname			:" << nickname << std::endl;
+	return first_name;
+}
+
+std::string Person::get_last_name()
+{
+	return last_name;
+}
+
+std::string Person::get_nickname()
+{
+	return nickname;
+}
+
+std::string Person::get_phone_number()
+{
+	return phone_number;
+}
+
+std::string Person::get_darkest_secret()
+{
+	return darkest_secret;
 }
 
 //todo full_info line per line
 void Person::print_full_info()
 {
-	std::cout << "index				:" << index << std::endl;
-	std::cout << "first name			:" << first_name << std::endl;
-	std::cout << "last name			:" << last_name << std::endl;
-	std::cout << "nickname			:" << nickname << std::endl;
+	std::cout << "index: " << index + 1 << std::endl;
+	std::cout << "first name: " << first_name << std::endl;
+	std::cout << "last name: " << last_name << std::endl;
+	std::cout << "nickname: " << nickname << std::endl;
+	std::cout << "phone number: " << phone_number << std::endl;
+	std::cout << "darkest secret: " << darkest_secret << std::endl;
 }
 
 int Person::is_defined() {
