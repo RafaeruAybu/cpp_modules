@@ -1,11 +1,29 @@
 #include "my_phonebook.hpp"
 
+Phonebook::Phonebook() {
+	num_of_persons = 0;
+	count = 0;
+}
+
+Phonebook::~Phonebook() {}
+
 static std::string get_str_from_user()
 {
-	std::string str;
+    std::string str;
 
-	std::cin >> str;
+    if ( ! std::getline(std::cin, str))
+        std::exit(0);
 	return str;
+}
+
+static int get_int_from_user()
+{
+	int num;
+
+	std::cin >> num;
+	if (std::cin.eof())
+	    std::exit(0);
+	return num;
 }
 
 void Phonebook::add()
@@ -33,11 +51,19 @@ void Phonebook::search() {
 	if (!person_array[0].is_defined())
 		return ;
 	std::cout << "Pleas select index: ";
-	std::cin >> num;
+	num = get_int_from_user();
 	if ((num < 1 || num > 9))
-		std::cout << "Wrong index! Index must be [0,8]." << std::endl;
+	{
+	    std::cout << "Wrong index! Index must be [1,8]." << std::endl;
+	    std::cin.clear();
+	    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	}
 	else if (person_array[num - 1].is_defined() != 1)
-		std::cout << "Person under this index is not defined!" << std::endl;
+	{
+	    std::cout << "Person under this index is not defined!" << std::endl;
+	    std::cin.clear();
+	    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	}
 	else
 		person_array[num - 1].print_full_info();
 }
@@ -48,7 +74,7 @@ std::string truncate(std::string str)
 	int i = 0;
 	int j = 0;
 
-	ret_str.insert(0, 10, ' ');				//ten spaces wide str
+	ret_str.insert(0, 10, ' ');	//ten spaces wide str
 	while (i < (10 - (int)str.length()))	//skip spaces
 		i++;
 	while (i < 10)							//copy chars

@@ -1,6 +1,7 @@
 #include "person.hpp"
 
 int Person::count = 0;
+int Person::index = 0;
 
 Person::Person()
 {
@@ -11,6 +12,7 @@ Person::Person()
 	nickname = "Undefined";
 	phone_number = "Undefined";
 	darkest_secret = "Undefined";
+	flag_defined = 0;
 }
 
 Person::~Person() {}
@@ -74,7 +76,6 @@ std::string Person::get_darkest_secret()
 	return darkest_secret;
 }
 
-//todo full_info line per line
 void Person::print_full_info()
 {
 	std::cout << "index: " << index + 1 << std::endl;

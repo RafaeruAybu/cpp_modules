@@ -5,18 +5,18 @@
 #include <string>
 #include "person.hpp"
 
-#define NUM_OF_PERSON 8
-
 class Phonebook
 {
 public:
+	Phonebook();
+	~Phonebook();
 	void add();
 	void search();
 	void print_all_persons();
 private:
-	int num_of_persons = NUM_OF_PERSON;
-	Person person_array[NUM_OF_PERSON];
-	int count = 0;
+	int num_of_persons;
+	Person person_array[8];
+	int count;
 };
 
 #endif

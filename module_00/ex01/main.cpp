@@ -8,16 +8,17 @@ int main()
 	while (1)
 	{
 		std::cout << "Write an command:" << std::endl;
-		std::cin >> str;
-		if (str.compare("ADD") == 0)
+		if ( ! std::getline(std::cin, str))
+		    std::exit(0);
+		if (str == "ADD")
 		{
 			phonebook.add();
 		}
-		else if (str.compare("SEARCH") == 0)
+		else if (str == "SEARCH")
 		{
 			phonebook.search();
 		}
-		else if (str.compare("EXIT") == 0)
+		else if (str == "EXIT")
 		{
 			std::cout << "Bye-bye!" << std::endl;
 			return (0);

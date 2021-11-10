@@ -29,8 +29,8 @@ private:
 	std::string phone_number;
 	std::string darkest_secret;
 	static int count;
-	int index = 0;
-	int flag_defined = 0;
+	static int index;
+	int flag_defined;
 };
 
 #endif
