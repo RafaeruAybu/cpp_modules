@@ -90,7 +90,8 @@ int Person::is_defined() {
 	return flag_defined;
 }
 
-void Person::define_the_def_flag() {
+void Person::define_the_def_flag()
+{
 	flag_defined = 1;
 }
 

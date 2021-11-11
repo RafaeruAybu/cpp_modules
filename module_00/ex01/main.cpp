@@ -9,7 +9,7 @@ int main()
 	{
 		std::cout << "Write an command:" << std::endl;
 		if ( ! std::getline(std::cin, str))
-		    std::exit(0);
+			std::exit(0);
 		if (str == "ADD")
 		{
 			phonebook.add();
@@ -28,29 +28,3 @@ int main()
 	}
 	return (0);
 }
-
-//int main()
-//{
-//
-//	while (1)
-//	{
-//		Phonebook pb;
-//		if ("EXIT")
-//		{
-//			return (0);
-//		}
-//		else if ("ADD")
-//		{
-//
-//		}
-//		else if ("SEARCH")
-//		{
-//
-//		}
-//		else
-//		{
-//			//discard, repeat loop
-//		}
-//	}
-//	return 0;
-//}
