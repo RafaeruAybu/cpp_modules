@@ -1,4 +1,4 @@
-NAME = karen
+NAME = karen-filter
 SRC = main.cpp Karen.cpp
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror
