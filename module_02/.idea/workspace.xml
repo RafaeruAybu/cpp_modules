@@ -7,13 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf49a672-b053-4d3b-b5bb-99d6bf686b86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex00/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01/Fixed.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01/Fixed.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex01/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex02/Fixed.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex02/Fixed.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ex02/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex00/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Fixed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Fixed.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Fixed.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,21 +39,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ex01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ex02" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ex02" />
       <recent name="$PROJECT_DIR$/ex01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ex01" />
       <recent name="$PROJECT_DIR$/ex00" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -65,7 +67,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637249408529</updated>
-      <workItem from="1637249410344" duration="1596000" />
+      <workItem from="1637249410344" duration="1678000" />
+      <workItem from="1637516243287" duration="3414000" />
     </task>
     <servers />
   </component>

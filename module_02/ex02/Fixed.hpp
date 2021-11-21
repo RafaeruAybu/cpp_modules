@@ -25,4 +25,5 @@ private:
 };
 std::ostream& operator<< (std::ostream &out, Fixed const &current);
 
+
 #endif //MODULE_02_EX01_FIXED_HPP
