@@ -7,13 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf49a672-b053-4d3b-b5bb-99d6bf686b86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ex02/Fixed.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex02/Fixed.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex02/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex01/Fixed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Fixed.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex01/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/Fixed.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex01/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex01/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex02/Fixed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex02/Fixed.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex03/Fixed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ex03/Fixed.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +36,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ex02" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ex03" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ex03" />
       <recent name="$PROJECT_DIR$/ex02" />
       <recent name="$PROJECT_DIR$/ex01" />
     </key>
@@ -58,6 +56,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Makefile" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/ex02/Makefile" target="" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Makefile Target.Makefile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,7 +77,11 @@
       <option name="presentableId" value="Default" />
       <updated>1637249408529</updated>
       <workItem from="1637249410344" duration="1678000" />
-      <workItem from="1637516243287" duration="3414000" />
+      <workItem from="1637516243287" duration="3601000" />
+      <workItem from="1637595995546" duration="54000" />
+      <workItem from="1637600068458" duration="228000" />
+      <workItem from="1637875243845" duration="3311000" />
+      <workItem from="1637886852849" duration="6354000" />
     </task>
     <servers />
   </component>

@@ -21,7 +21,7 @@ Fixed::Fixed(const int num)
 Fixed::Fixed(const float f)
 {
 	std::cout << "Float constructor called" << std::endl;
-	_fixed = (int)std::round(f * (float)(1 << num_of_frctnl_bits));
+	_fixed = (int)std::roundf(f * (float)(1 << num_of_frctnl_bits));
 }
 
 Fixed::~Fixed()
