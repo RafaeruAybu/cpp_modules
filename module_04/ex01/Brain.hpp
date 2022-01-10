@@ -10,10 +10,10 @@ public:
 	Brain();
 	Brain(const Brain& brain);
 	~Brain();
+	std::string get_idea(int i);
 	Brain& operator= (const Brain& brain);
 private:
 	std::string ideas[NUM_OF_IDEAS];
 };
-
 
 #endif //MODULE_04_BRAIN_H
