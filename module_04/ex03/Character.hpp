@@ -1,7 +1,10 @@
 #ifndef EX03_CHARACTER_HPP
 #define EX03_CHARACTER_HPP
 #include <string>
-#include "ICharacter.hpp"
+#include "AMateria.hpp"		//to be able to equip
+#include "ICharacter.hpp"	//inherited from
+
+#define MATERIA_ITEM_NUM 4
 
 //todo implement
 class Character : public ICharacter
@@ -20,7 +23,7 @@ public:
 
 private:
 	std::string name;
+	AMateria* materia_array[MATERIA_ITEM_NUM]; //inventory
 };
-
 
 #endif //EX03_CHARACTER_HPP

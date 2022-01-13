@@ -1,7 +1,7 @@
 #ifndef EX03_AMATERIA_HPP
 #define EX03_AMATERIA_HPP
 #include <string>
-//#include "ICharacter.hpp"
+#include "ICharacter.hpp"
 
 //todo implement ICharacter, class depends on.
 class AMateria
@@ -17,7 +17,7 @@ public:
 	std::string const & getType() const;
 
 	virtual AMateria* clone() const = 0;
-	//virtual void use(ICharacter& target);
+	virtual void use(ICharacter& target);
 
 
 
