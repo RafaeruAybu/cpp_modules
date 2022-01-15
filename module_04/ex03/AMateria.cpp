@@ -1,27 +1,15 @@
 #include "AMateria.hpp"
 
-AMateria::AMateria() : type("undefined") {}
+AMateria::AMateria(std::string const &type) : type(type) {}
 
-AMateria::AMateria(const std::string &type) : type(type) {}
+AMateria::~AMateria() {}
 
-AMateria::AMateria(const AMateria& inst) : type(inst.type) {}
-
-std::string const & AMateria::getType() const
+std::string const & AMateria::getType(void) const
 {
 	return type;
 }
 
-//todo
-//void use(ICharacter& target)
-//{
-//
-//}
-
-AMateria& AMateria::operator= (const AMateria& inst)
+void AMateria::use(ICharacter &target)
 {
-	if (this == &inst)
-		return *this;
-
-	type = inst.type;
-	return *this;
+	(void)target;
 }

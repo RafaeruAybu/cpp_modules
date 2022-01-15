@@ -1,29 +1,27 @@
 #ifndef EX03_CHARACTER_HPP
 #define EX03_CHARACTER_HPP
-#include <string>
-#include "AMateria.hpp"		//to be able to equip
-#include "ICharacter.hpp"	//inherited from
+#include "ICharacter.hpp"
 
-#define MATERIA_ITEM_NUM 4
-
-//todo implement
 class Character : public ICharacter
 {
 public:
-	Character();
-	Character(const std::string& name);
-	Character(const Character& inst);
-	~Character();
-	std::string const & getName() const;
+	Character(std::string const& name);
+	Character(Character const& other);
+	virtual ~Character();
+
+
+	std::string const & getName(void) const;
 	void equip(AMateria* m);
 	void unequip(int idx);
 	void use(int idx, ICharacter& target);
 
-	Character& operator= (const Character& inst);
-
+	Character & operator=(Character const& other);
 private:
+	Character();
+
 	std::string name;
-	AMateria* materia_array[MATERIA_ITEM_NUM]; //inventory
+	int equipped;
+	AMateria* inventory[4];
 };
 
-#endif //EX03_CHARACTER_HPP
+#endif
