@@ -1,0 +1,9 @@
+Scalar conversion.
+char
+    c, a
+int
+    -42 42
+float
+    0.0f -3.2f
+double
+    0.0 -4.2
