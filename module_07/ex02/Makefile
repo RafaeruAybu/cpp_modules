@@ -1,7 +1,7 @@
 NAME	= a.out
 SRC		= main.cpp
-CC		= clang++
-CFLAGS	= -Wall -Wextra -Werror 
+CC		= c++
+CFLAGS	= -Wall -Wextra -Werror -std=c++98
 OBJ		= $(SRC:.cpp=.o)
 
 $(NAME): $(OBJ)
